@@ -33,6 +33,11 @@ var data={
     "name":"暴食之罪 ‧ 瑪琳",
     "c":"5",
     "src":"https://i.imgur.com/qnVQwWS.png"
+  },
+  "7":{
+    "name":"色慾之罪 ‧ 哥塞爾",
+    "c":"5",
+    "src":"https://i.imgur.com/hNGfzhF.png"
   }
   
 };
@@ -99,7 +104,7 @@ function draw(ewrt,b){
         itemsWeight.push(o)
       }
     }
-    for(var y = 3; y <= 6; y++){
+    for(var y = 3; y <= 7; y++){
       for(var w = 0;w<180;w++){
         itemsWeight.push(y)
       }
@@ -147,7 +152,7 @@ function draw(ewrt,b){
         itemsWeight.push(o)
       }
     }
-    for(var y = 3; y <= 6; y++){
+    for(var y = 3; y <= 7; y++){
       for(var w = 0;w<180;w++){
         itemsWeight.push(y)
       }
