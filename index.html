@@ -31,7 +31,7 @@
       <nav class="navbar navbar-light bg-light">
         <span class="navbar-text">
           抽卡模擬器
-          &nbsp;<span class="badge badge-secondary" id="storenum">0</span>
+          &nbsp;<span class="badge badge-secondary" id="storenum">累計次數：0</span>
         </span>
         <form class="form-inline my-2 my-lg-0">
         <button type="button" class="navbar-toggler" data-toggle="modal" data-target="#exampleModal">
@@ -58,8 +58,8 @@
                     目前模式：
                   </p>
                   <br>
-                  <button class="btn btn-secondary">
-                    ads
+                  <button class="btn btn-secondary" onclick="clew()">
+                    清除累積次數
                   </button>
                 </div>
               </div>
@@ -197,8 +197,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
     <script>
     var cardx = 0
     var cardy = 0
@@ -211,6 +209,7 @@
       if(screen.width < 300){
           $("#myContainer").attr("style","width:100%;position:relative;")  
         }
+      wee(aqw,bqw)
         $("#score").attr("style","height:" + (screen.height-60) + "px;overflow: auto;")
         var elem1 = document.getElementById("myContainer");
         var we = elem1.clientWidth
@@ -387,7 +386,7 @@ function draw(ewrt,b){
       k++
       his++
       //$("#s8").html(his)
-      $("#storenum").html("累計次數:" + historyb)
+      $("#storenum").html("累計次數：" + historyb)
       $("#as1").html("這一輪已抽：" + historyb)
       
       if(historyb == 35){
@@ -437,7 +436,7 @@ function draw(ewrt,b){
       k++
       his++
       //$("#s8").html(his)
-      $("#storenum").html("累計次數:" + historyb)
+      $("#storenum").html("累計次數：" + historyb)
       $("#as1").html("這一輪已抽：" + historyb)
       if(historyb == 35){
       	historyb =0
@@ -465,27 +464,48 @@ function restore(){
   $("#myAnimation").attr("style","top:" + position.y + ";width:" + we + "px;display:none;") 
 }
 
-var aqw
-var bqw
+var aqw = 1
+var bqw = 1
 
 $('#inp').change(function(){
   aqw = $('#inp').val()
+  wee(aqw,bqw)
 });
 
 $('#inp1').change(function(){
   bqw = $('#inp1').val()
+  wee(aqw,bqw)
 });
 
 function wee(a,b){
-  var e
+  var e = ""
   if(a == "1"){
-    e += ""
+    e += '<span class="badge badge-success">單抽</span>'
   }else if(a == "10"){
-    
+    e += '<span class="badge badge-success">10抽</span>'
   }else if(a == "35"){
-    
+    e += '<span class="badge badge-success">35抽</span>'
   }
+  e += '&nbsp;'
+  if(b == "1"){
+    e += '<span class="badge badge-danger">一般</span>'
+  }else if(b == "2"){
+    e += '<span class="badge badge-danger">加倍</span>'
+  }
+  $("#as3").html("目前模式：" + e)
 }
+      
+function clew(){
+  his = 0
+  historyb =0
+  $("#storenum").html("累計次數：0")
+  $("#as2").html("總共已抽：0")
+  $("#as1").html("這一輪已抽：0")
+  for(var i = 0;i <8;i++){
+    $("#c" + i + "s").html("0")
+  }
+  alert("已清除")
+}      
     </script>
   </body>
 </html>
