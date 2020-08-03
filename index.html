@@ -6,17 +6,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      .ldark{background-color: #e2e3e5;}
+      .lsuccess{background-color: #d4edda;}
+      .lwarning{background-color: #ffe5c2;}
+      .ldanger{background-color: #f8d7da;}
+      .bp{
+      	background-color: #ddccff;
+      }
+      #myAnimation {
+        position: absolute;
+        display:  flex;
+        justify-content:  center;
+      }
+      #drawresult {
+        margin: 0 auto;
+      }
+    </style>
+    <title>機率模擬器</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="fixed-top">
+      <nav class="navbar navbar-light bg-light">
+        <span class="navbar-text">
+          抽卡模擬器 || 19.2｛七大罪｝
+          &nbsp;<span class="badge badge-secondary" id="storenum">0</span>
+        </span>
+        <form class="form-inline my-2 my-lg-0">
+        <button type="button" class="navbar-toggler" data-toggle="modal" data-target="#exampleModal">
+          <svg width="1.5em" height="1.5em" viewbox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/></svg>
+        </button>&nbsp;&nbsp;
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </form>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-4 " style="height:100px;overflow: auto;" id="score">
+            <div class="d-flex flex-wrap justify-content-center">
+            <div class="card" style="width:82px;">
+              <img id="c0" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c0s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c1" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c1s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c2" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c2s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c3" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c3s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c4" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c4s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c5" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c5s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c6" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c6s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c7" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c7s">0</span>
+                </h3>
+              </div>
+            </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+      <br><br>
+      <div class="d-flex flex-wrap justify-content-center" id="drawresult">
+        <img id ="myContainer" style="width:300px;position:relative;" src="https://cdn.glitch.com/637bbe83-5a09-4478-bad7-0030c1ca0cba%2Fmaxresdefault.jpg?v=1594179031034" onclick="a()">
+        <img id ="myAnimation" src="https://cdn.glitch.com/637bbe83-5a09-4478-bad7-0030c1ca0cba%2FOXuM1Qf.jpg?v=1594179035626" style="top:100px;width:239px;display: none;">
+    </div>
+     </div>
+    
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">設定</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+               <div class="input-group-prepend">
+                 <label class="input-group-text" for="inputGroupSelect01">
+                   抽卡模式
+                 </label> 
+               </div> 
+               <select class="custom-select" id="inp"> 
+                 <option value="1" selected>單抽</option>
+                 <option value="10">10連抽</option> 
+                 <option value="35">35抽(一次保底)</option> 
+               </select> 
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect02">
+                    機率模式
+                  </label> 
+                </div> 
+                <select class="custom-select" id="inp1"> 
+                  <option value="1" selected>一般</option>
+                  <option value="2">加倍</option> 
+                </select> 
+              </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="19.2/draw.js"></script>
+    <script>
+    var cardx = 0
+    var cardy = 0
+    
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    
+    $( document ).ready(function() {
+      if(screen.width < 300){
+          $("#myContainer").attr("style","width:100%;position:relative;")  
+        }
+        $("#score").attr("style","height:" + (screen.height-60) + "px;overflow: auto;")
+        var elem1 = document.getElementById("myContainer");
+        var we = elem1.clientWidth
+        we = we*0.58
+        var position = getPosition(elem1);
+        //alert("座標: " + position.x + ', ' + position.y);
+        cardx = position.x
+        cardy = position.y + 81
+        $("#myAnimation").attr("style","top:" + position.y + ";width:" + we + "px;display:none;") 
+        for(var i = 0;i<7; i++){
+          $("#c" + i).attr("src",data[i].src)
+          $("#c" + i).attr("data-original-title",data[i].name)
+        }
+    }); 
+      
+    function a(){
+      var elem = document.getElementById("myAnimation"); 
+      var elem1 = document.getElementById("myContainer");
+      elem.style.display = "";
+      var position = getPosition(elem);
+      var position1 = getPosition(elem1);
+      var pos = position.y
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (pos >= (position1.y+225)) {
+          clearInterval(id);
+          draw($("#inp").val(),$("#inp1").val())
+        } else {
+          pos= pos +4; 
+          elem.style.top = pos + 'px'; 
+        }
+      }
+    }
+      
+      
+      
+    function getPosition (element) {
+      var x = 0;
+      var y = 0;
+      // 搭配上面的示意圖可比較輕鬆理解為何要這麼計算
+      while ( element ) {
+        x += element.offsetLeft - element.scrollLeft + element.clientLeft;
+        y += element.offsetTop - element.scrollLeft + element.clientTop;
+        element = element.offsetParent;
+      }
+    
+      return { x: x, y: y };
+    }
+      
+    </script>
   </body>
 </html>
+    
