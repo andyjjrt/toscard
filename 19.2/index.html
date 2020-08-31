@@ -24,40 +24,17 @@
         margin: 0 auto;
       }
     </style>
-    <title>機率模擬器 || 19.3 || 《顛覆天地．神魔交戰》</title>
+    <title>機率模擬器 || 19.2</title>
   </head>
   <body>
     <div class="fixed-top">
       <nav class="navbar navbar-light bg-light">
         <span class="navbar-text">
-          
-          <div class="dropdown">
-            抽卡模擬器
-          &nbsp;
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="storenum" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              累計次數：0
-            </button>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
-              <form class="px-4 py-3">
-                <p id="as1">
-                  這一輪已抽：0
-                </p>
-                <p id="as2">
-                  總共已抽：0
-                </p>
-                <p id="as3">
-                  目前模式：
-                </p>
-                <button class="btn btn-secondary" onclick="clew()">
-                  清除累積次數
-                </button>
-              </form>
-            </div>
-          </div>
+          抽卡模擬器
+          &nbsp;<span class="badge badge-secondary" id="storenum">累計次數：0</span>
         </span>
         <form class="form-inline my-2 my-lg-0">
-          <div class="btn-group">
-            <button type="button" class="navbar-toggler" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" class="navbar-toggler" data-toggle="modal" data-target="#exampleModal">
           <svg width="1.5em" height="1.5em" viewbox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/></svg>
         </button>&nbsp;&nbsp;
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,79 +48,90 @@
           <div class="container">
             <div class="card">
                 <div class="card-body">
-                  <div class="d-flex flex-wrap justify-content-center">
-                    <div class="card" style="width:82px;">
-                      <img id="c0" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
-                      <div class="text-center">
-                        <h3>
-                          <span class="badge bp" id="c0s">0</span>
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="card" style="width:82px;">
-                      <img id="c1" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
-                      <div class="text-center">
-                        <h3>
-                          <span class="badge bp" id="c1s">0</span>
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="card" style="width:82px;">
-                      <img id="c2" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
-                      <div class="text-center">
-                        <h3>
-                          <span class="badge bp" id="c2s">0</span>
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="card" style="width:82px;">
-                      <img id="c3" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
-                      <div class="text-center">
-                        <h3>
-                          <span class="badge bp" id="c3s">0</span>
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="card" style="width:82px;">
-                      <img id="c4" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
-                      <div class="text-center">
-                        <h3>
-                          <span class="badge bp" id="c4s">0</span>
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="card" style="width:82px;">
-                      <img id="c5" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
-                      <div class="text-center">
-                        <h3>
-                          <span class="badge bp" id="c5s">0</span>
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="card" style="width:82px;">
-                      <img id="c6" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
-                      <div class="text-center">
-                        <h3>
-                          <span class="badge bp" id="c6s">0</span>
-                        </h3>
-                      </div>
-                    </div>
-                    <div class="card" style="width:82px;">
-                      <img id="c7" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
-                      <div class="text-center">
-                        <h3>
-                          <span class="badge bp" id="c7s">0</span>
-                        </h3>
-                      </div>
-                    </div>
-
-                  </div>
+                  <p id="as1">
+                    這一輪已抽：0
+                  </p>
+                  <p id="as2">
+                    總共已抽：0
+                  </p>
+                  <p id="as3">
+                    目前模式：
+                  </p>
+                  <button class="btn btn-secondary" onclick="clew()">
+                    清除累積次數
+                  </button>
                 </div>
               </div>
             <br>
           </div>
           
-            
+            <div class="d-flex flex-wrap justify-content-center">
+            <div class="card" style="width:82px;">
+              <img id="c0" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c0s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c1" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c1s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c2" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c2s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c3" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c3s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c4" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c4s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c5" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c5s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c6" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c6s">0</span>
+                </h3>
+              </div>
+            </div>
+              <div class="card" style="width:82px;">
+              <img id="c7" src="https://vignette.wikia.nocookie.net/tos/images/b/b5/2381i.png/revision/latest/scale-to-width-down/80?cb=20200419094138&path-prefix=zh" width="80" data-toggle="tooltip" data-original-title="編號6666·依貝思" >
+              <div class="text-center">
+                <h3>
+                  <span class="badge bp" id="c7s">0</span>
+                </h3>
+              </div>
+            </div>
+              
+            </div>
           
         </div>
       </div>
@@ -157,6 +145,7 @@
         <img id ="myAnimation" src="https://cdn.glitch.com/637bbe83-5a09-4478-bad7-0030c1ca0cba%2FOXuM1Qf.jpg?v=1594179035626" style="top:100px;width:239px;display: none;">
     </div>
      </div>
+    
     
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -199,6 +188,7 @@
         </div>
       </div>
     </div>
+    
 
     
     <!-- Optional JavaScript -->
@@ -267,46 +257,46 @@
     
       return { x: x, y: y };
     }
-var data={
+      var data={
   "0": {
-    "name":"命軸剝奪 ‧ 諾索斯",
-    "c":"3",
-    "src":"https://i.imgur.com/7wdxiZK.png"
+    "name":"憤怒之罪 ‧ 梅里奧達斯",
+    "c":"5",
+    "src":"https://i.imgur.com/iyQLLFr.png"
   },
   "1":{
-    "name":"蜃樓星火 ‧ 伊斯塔",
+    "name":"貪婪之罪 ‧ 班",
     "c":"2",
-    "src":"https://i.imgur.com/OuJp4Lp.png"
+    "src":"https://i.imgur.com/SROdXas.png"
   },
   "2":{
-    "name":"星辰之理 ‧ 蘇因",
-    "c":"4",
-    "src":"https://i.imgur.com/39ZFmBy.png"
+    "name":"怠惰之罪 ‧ 金恩",
+    "c":"3",
+    "src":"https://i.imgur.com/NgzFofU.png"
   },
   "3":{
-    "name":"命序解構 ‧ 瑪努恩",
-    "c":"1",
-    "src":"https://i.imgur.com/sM1hxiM.png"
+    "name":"看板娘 ‧ 伊麗莎白",
+    "c":"4",
+    "src":"https://i.imgur.com/FDEyriq.png"
   },
   "4":{
-    "name":"品嚐生命 ‧ 烏素姆",
+    "name":"卡梅洛國王 ‧ 亞瑟",
     "c":"2",
-    "src":"https://i.imgur.com/NBAqxV6.png"
+    "src":"https://i.imgur.com/L4OnYNA.png"
   },
   "5":{
-    "name":"卑猥雙生 ‧ 羅伊戈與札爾",
+    "name":"嫉妒之罪 ‧ 黛安娜",
     "c":"3",
-    "src":"https://i.imgur.com/bqa5A9h.png"
+    "src":"https://i.imgur.com/mvKysmp.png"
   },
   "6":{
-    "name":"天樞光華 ‧ 安沙爾",
-    "c":"3",
-    "src":"https://i.imgur.com/rVq4j1M.png"
+    "name":"暴食之罪 ‧ 瑪琳",
+    "c":"5",
+    "src":"https://i.imgur.com/qnVQwWS.png"
   },
   "7":{
-    "name":"魔蟲戾心 ‧ 修德梅耳",
+    "name":"色慾之罪 ‧ 哥塞爾",
     "c":"5",
-    "src":"https://i.imgur.com/zhHYgn7.png"
+    "src":"https://i.imgur.com/hNGfzhF.png"
   }
   
 };
