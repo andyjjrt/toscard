@@ -1,0 +1,101 @@
+{
+    "2661":{
+        "id": "2661",
+        "ZH_name": "竈門炭治郎",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.01,
+            "up": 0.025
+        },
+        "attr": 1,
+        "role": 1
+    },
+    "2663":{
+        "id": "2663",
+        "ZH_name": "竈門禰豆子",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.04,
+            "up": 0.0666666666666667
+        },
+        "attr": 2,
+        "role": 2
+    },
+    "2664":{
+        "id": "2664",
+        "ZH_name": "嘴平伊之助",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.174,
+            "up": 0.155
+        },
+        "attr": 3,
+        "role": 3
+    },
+    "2665":{
+        "id": "2665",
+        "ZH_name": "我妻善逸",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.174,
+            "up": 0.155
+        },
+        "attr": 4,
+        "role": 3
+    },
+    "2666":{
+        "id": "2666",
+        "ZH_name": "栗花落香奈乎",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.174,
+            "up": 0.155
+        },
+        "attr": 5,
+        "role": 3
+    },
+    "2667":{
+        "id": "2667",
+        "ZH_name": "冨岡義勇",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.04,
+            "up": 0.0666666666666667
+        },
+        "attr": 1,
+        "role": 2
+    },
+    "2668":{
+        "id": "2668",
+        "ZH_name": "煉獄杏壽郎",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.04,
+            "up": 0.0666666666666667
+        },
+        "attr": 2,
+        "role": 2
+    },
+    "2669":{
+        "id": "2669",
+        "ZH_name": "胡蝶忍",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.174,
+            "up": 0.155
+        },
+        "attr": 5,
+        "role": 3
+    },
+    "2670":{
+        "id": "2670",
+        "ZH_name": "珠世與愈史郎",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.174,
+            "up": 0.155
+        },
+        "attr": 4,
+        "role": 3
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "2636":{
+        "id": "2636",
+        "ZH_name": "九尾狐．玉藻前",
+        "EN_name": "Nine-tailed Fox M. Tamamo",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 1,
+        "role": 3
+    },
+    "2637":{
+        "id": "2637",
+        "ZH_name": "寫作之神．菲呂拉",
+        "EN_name": "Philyra, The Authors' Muse",
+        "probability": {
+            "normal": 0.01,
+            "up": 0.025
+        },
+        "attr": 2,
+        "role": 1
+    },
+    "2638":{
+        "id": "2638",
+        "ZH_name": "傾世妖魅．妲己",
+        "EN_name": "Seductress Daji",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 3,
+        "role": 3
+    },
+    "2639":{
+        "id": "2639",
+        "ZH_name": "扭曲天使．亞伯汗",
+        "EN_name": "Angel of Distortion Azazel",
+        "probability": {
+            "normal": 0.045,
+            "up": 0.1
+        },
+        "attr": 4,
+        "role": 2
+    },
+    "2640":{
+        "id": "2640",
+        "ZH_name": "叛逆天使．路西法",
+        "EN_name": "Angel of Doom Lucifer",
+        "probability": {
+            "normal": 0.045,
+            "up": 0.1
+        },
+        "attr": 5,
+        "role": 2
+    },
+    "2641":{
+        "id": "2641",
+        "ZH_name": "輝日神．天照大神",
+        "EN_name": "Deity of the Sun Amaterasu",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 2,
+        "role": 3
+    },
+    "2642":{
+        "id": "2642",
+        "ZH_name": "神使．八咫烏",
+        "EN_name": "Crow Emissary Yatagarasu",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 4,
+        "role": 3
+    },
+    "2643":{
+        "id": "2643",
+        "ZH_name": "冥妃神．伊邪那美",
+        "EN_name": "Deity of the Dead Izanami",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 5,
+        "role": 3
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "version":{
+        "20.0": {"name": "20.0", "a_round": 35, "detail": "來自邪馬台國的委託"},
+        "19.8": {"name": "19.8", "a_round": 35, "detail": "神魔交錯鬼滅之刃"},
+        "19.7": {"name": "19.7", "a_round": 35, "detail": "穿越時空軌跡"},
+        "19.6": {"name": "19.6", "a_round": 35, "detail": "《神魔之塔》x《ROCKMAN X DiVE》"},
+        "19.5": {"name": "19.5", "a_round": 35, "detail": "以魔法閣沙蘿耶之名"},
+        "19.4": {"name": "19.4", "a_round": 35, "detail": "神魔之塔．開啟絕對領域"}
+    },
+    "latest": "20.0"
+}

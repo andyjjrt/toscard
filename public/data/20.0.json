@@ -1,0 +1,90 @@
+{
+    "2686":{
+        "id": "2686",
+        "ZH_name": "鏡掠夢夕 ‧ 懷凌",
+        "EN_name": "Mirage of Dream - Huailing",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 1,
+        "role": 3
+    },
+    "2687":{
+        "id": "2687",
+        "ZH_name": "言采機靈 ‧ 熾夢",
+        "EN_name": "Voluble Vivacity - Chimeng",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 2,
+        "role": 3
+    },
+    "2688":{
+        "id": "2688",
+        "ZH_name": "少華鈞天 ‧ 華曦",
+        "EN_name": "Apex of Fortitude - Huaxi",
+        "probability": {
+            "normal": 0.01,
+            "up": 0.025
+        },
+        "attr": 3,
+        "role": 1
+    },
+    "2689":{
+        "id": "2689",
+        "ZH_name": "琴息濯洗 ‧ 霏音",
+        "EN_name": "Harmonic of Purification - Feiyin",
+        "probability": {
+            "normal": 0.045,
+            "up": 0.1
+        },
+        "attr": 4,
+        "role": 2
+    },
+    "2690":{
+        "id": "2690",
+        "ZH_name": "傲志不訾 ‧ 姬臣",
+        "EN_name": "Soaring Aspiration - Jichen",
+        "probability": {
+            "normal": 0.045,
+            "up": 0.1
+        },
+        "attr": 5,
+        "role": 2
+    },
+    "2691":{
+        "id": "2691",
+        "ZH_name": "翳沒幽謐 ‧ 洛墨",
+        "EN_name": "Barbules of Grace - Luomo",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 3,
+        "role": 3
+    },
+    "2692":{
+        "id": "2692",
+        "ZH_name": "戈戟煥發 ‧ 浮識",
+        "EN_name": "Glowing Belligerence - Fushi",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 4,
+        "role": 3
+    },
+    "2693":{
+        "id": "2693",
+        "ZH_name": "逸豫知心 ‧ 渺紗",
+        "EN_name": "Unruffled Heart - Miaosha",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 5,
+        "role": 3
+    }
+}
