@@ -1,5 +1,6 @@
-## toscard
+# 抽卡模擬器V2.0
 
-A simple web app to simulate tos game card draw.
+A simple card draw page for TOS, based on bootstrap5 and Vuejs.
 
-**New** Testing now ! Using vue.js + bootstrap5 framework to rebuild this site, if you have any bug, please comment an issue.
+Toturial: [https://forum.gamer.com.tw/Co.php?bsn=23805&sn=3760124](https://forum.gamer.com.tw/Co.php?bsn=23805&sn=3760124).
+

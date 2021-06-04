@@ -1,0 +1,90 @@
+{
+    "2566":{
+        "id": "2566",
+        "ZH_name": "水幻冰藍 ‧ 米菲波",
+        "EN_name": "Cerulean Illusion - Mephibo",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 1,
+        "role": 3
+    },
+    "2567":{
+        "id": "2567",
+        "ZH_name": "緋曦赤霞 ‧ 紅璦",
+        "EN_name": "Crimson Runedragon - Hong Ai",
+        "probability": {
+            "normal": 0.045,
+            "up": 0.1
+        },
+        "attr": 2,
+        "role": 2
+    },
+    "2568":{
+        "id": "2568",
+        "ZH_name": "比擬萬象 ‧ 達格",
+        "EN_name": "Versatile Shapeshifter - Dagda",
+        "probability": {
+            "normal": 0.045,
+            "up": 0.1
+        },
+        "attr": 3,
+        "role": 2
+    },
+    "2569":{
+        "id": "2569",
+        "ZH_name": "天才使魔 ‧ 豹豹",
+        "EN_name": "Panther the Ingenious Feline",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 4,
+        "role": 3
+    },
+    "2570":{
+        "id": "2570",
+        "ZH_name": "夢詠守望 ‧ 英格麗",
+        "EN_name": "Guardian of Reverie - Ingrid",
+        "probability": {
+            "normal": 0.01,
+            "up": 0.025
+        },
+        "attr": 5,
+        "role": 1
+    },
+    "2571":{
+        "id": "2571",
+        "ZH_name": "黛蔻藥師 ‧ 茜蘿珊",
+        "EN_name": "Blossoming Apothecary - Xilocient",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 3,
+        "role": 3
+    },
+    "2572":{
+        "id": "2572",
+        "ZH_name": "破幻銀鈴 ‧ 傾霞",
+        "EN_name": "Sobering Chimes - Qingxia",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 4,
+        "role": 3
+    },
+    "2573":{
+        "id": "2573",
+        "ZH_name": "無微珍護 ‧ 曼特裘",
+        "EN_name": "All-round Butler - Montague",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 5,
+        "role": 3
+    }
+}

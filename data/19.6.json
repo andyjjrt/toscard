@@ -1,0 +1,90 @@
+{
+    "2611":{
+        "id": "2611",
+        "ZH_name": "艾克斯",
+        "EN_name": "X",
+        "probability": {
+            "normal": 0.01,
+            "up": 0.025
+        },
+        "attr": 1,
+        "role": 1
+    },
+    "2612":{
+        "id": "2612",
+        "ZH_name": "傑洛",
+        "EN_name": "Zero",
+        "probability": {
+            "normal": 0.045,
+            "up": 0.1
+        },
+        "attr": 2,
+        "role": 2
+    },
+    "2614":{
+        "id": "2614",
+        "ZH_name": "帕蕾特",
+        "EN_name": "Pallette",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 3,
+        "role": 3
+    },
+    "2615":{
+        "id": "2615",
+        "ZH_name": "艾克賽爾",
+        "EN_name": "Axl",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 4,
+        "role": 3
+    },
+    "2616":{
+        "id": "2616",
+        "ZH_name": "愛莉絲",
+        "EN_name": "Iris",
+        "probability": {
+            "normal": 0.045,
+            "up": 0.1
+        },
+        "attr": 2,
+        "role": 2
+    },
+    "2617":{
+        "id": "2617",
+        "ZH_name": "艾莉雅",
+        "EN_name": "Alia",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 2,
+        "role": 3
+    },
+    "2618":{
+        "id": "2618",
+        "ZH_name": "馬莉諾",
+        "EN_name": "Marino",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 2,
+        "role": 3
+    },
+    "2619":{
+        "id": "2619",
+        "ZH_name": "席娜蒙",
+        "EN_name": "Cinnamon",
+        "probability": {
+            "normal": 0.18,
+            "up": 0.155
+        },
+        "attr": 4,
+        "role": 3
+    }
+}
