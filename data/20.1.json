@@ -1,0 +1,98 @@
+{
+    "2699":{
+        "id": "2699",
+        "ZH_name": "假面騎士空我(全能型態)",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.04,
+            "up": 0.0666666666666667
+        },
+        "attr": 2,
+        "role": 2,
+        "src": "https://imgur.com/Qf6kGfm.jpg"
+    },
+    "2701":{
+        "id": "2701",
+        "ZH_name": "假面騎士Zero-One",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.01,
+            "up": 0.025
+        },
+        "attr": 3,
+        "role": 1,
+        "src": "https://imgur.com/xH9bURD.jpg"
+    },
+    "2702":{
+        "id": "2702",
+        "ZH_name": "假面騎士Black",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.04,
+            "up": 0.0666666666666667
+        },
+        "attr": 4,
+        "role": 2,
+        "src": "https://imgur.com/r2AVIxY.jpg"
+    },
+    "2704":{
+        "id": "2704",
+        "ZH_name": "假面騎士Decade",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.04,
+            "up": 0.0666666666666667
+        },
+        "attr": 5,
+        "role": 2,
+        "src": "https://imgur.com/FR024Y3.jpg"
+    },
+    "2706":{
+        "id": "2706",
+        "ZH_name": "假面騎士Saber",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.2175,
+            "up": 0.155
+        },
+        "attr": 2,
+        "role": 3,
+        "src": "https://imgur.com/hOW2xcX.jpg"
+    },
+    "2707":{
+        "id": "2707",
+        "ZH_name": "假面騎士(新1號)",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.2175,
+            "up": 0.155
+        },
+        "attr": 3,
+        "role": 3,
+        "src": "https://imgur.com/UFRS6iB.jpg"
+    },
+    "2708":{
+        "id": "2708",
+        "ZH_name": "假面騎士電王",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.2175,
+            "up": 0.155
+        },
+        "attr": 2,
+        "role": 3,
+        "src": "https://imgur.com/93PmfjH.jpg"
+    },
+    "2709":{
+        "id": "2709",
+        "ZH_name": "假面騎士Ex-Aid",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.2175,
+            "up": 0.155
+        },
+        "attr": 4,
+        "role": 3,
+        "src": "https://imgur.com/4ewSGgX.jpg"
+    }
+}
