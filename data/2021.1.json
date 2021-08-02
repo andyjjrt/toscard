@@ -1,0 +1,134 @@
+{
+    "10036":{
+        "id": "10036",
+        "ZH_name": "巧舌饞涎 ‧ 柯柯",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 1,
+        "role": 3
+    },
+    "10037":{
+        "id": "10037",
+        "ZH_name": "炙紋幻轉 ‧ 各各爾",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 2,
+        "role": 3
+    },
+    "10038":{
+        "id": "10038",
+        "ZH_name": "童夢果匠 ‧ 謝貝妮",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 3,
+        "role": 3
+    },
+    "10039":{
+        "id": "10039",
+        "ZH_name": "血杖強權 ‧ 果樂兒",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 4,
+        "role": 3
+    },
+    "10040":{
+        "id": "10040",
+        "ZH_name": "幽浮雙戟 ‧ 鬼塚羽",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 5,
+        "role": 3
+    },
+    "10041":{
+        "id": "10041",
+        "ZH_name": "龍角焰息 ‧ 珂婍娜",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 5,
+        "role": 3
+    },
+    "10042":{
+        "id": "10042",
+        "ZH_name": "繞尖芬芳 ‧ 睡蓮",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 2,
+        "role": 3
+    },
+    "10043":{
+        "id": "10043",
+        "ZH_name": "笛音夢韻 ‧ 漣璇",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 3,
+        "role": 3
+    },
+    "10044":{
+        "id": "10044",
+        "ZH_name": "蓄力鐳射 ‧ 飛蘿",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 4,
+        "role": 3
+    },
+    "10045":{
+        "id": "10045",
+        "ZH_name": "革新鑄造 ‧ 都雷托",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.09,
+            "up": 0.09
+        },
+        "attr": 5,
+        "role": 3
+    },
+    "10047":{
+        "id": "10047",
+        "ZH_name": "嬌憨龍娃 ‧ 爪娃諾",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.015,
+            "up": 0.015
+        },
+        "attr": 4,
+        "role": 1
+    },
+    "10048":{
+        "id": "10048",
+        "ZH_name": "激濤獅心 ‧ 奎內塞",
+        "EN_name": "",
+        "probability": {
+            "normal": 0.085,
+            "up": 0.085
+        },
+        "attr": 1,
+        "role": 2
+    }
+}
